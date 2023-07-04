@@ -5,46 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<body class="h-screen bg-[var(--Light-Gray)] flex justify-center">
+  <main class="grid grid-rows-3 lg:grid-rows-2 lg:grid-cols-2 mx-5 my-10 lg:my-20 max-w-sm lg:max-w-4xl shadow-2xl rounded-md">
+    <div class="bg-white p-5 lg:p-14 flex flex-col justify-between lg:col-span-2 rounded-tl-md rounded-tr-md">
+      <h1 class="text-xl lg:text-3xl font-bold text-[var(--Cyan)]">Join our community</h1>
+    
+      <h2 class="text-lg lg:text-xl font-bold text-[var(--Bright-Yellow)]">30-day, hassle-free money back guarantee</h2>
+    
+      <p class="text-sm lg:text-base font-normal text-[var(--Grayish-Blue)]">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="flex flex-col justify-between p-5 lg:p-14 bg-[var(--Cyan)] lg:rounded-bl-md">
+      <h2 class="text-white text-base lg:text-lg font-normal">Monthly Subscription</h2>
+    
+      <h1 class="text-white font-bold text-2xl lg:text-3xl">&dollar;29 <span class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">per month</span> </h1>
+    
+      <p class="text-[var(--Light-Gray)] text-sm lg:text-base font-normal">Full access for less than &dollar;1 a day</p>
+    
+      <button class="bg-[var(--Bright-Yellow)] p-3 rounded-md shadow-lg text-white mt-4 hover:opacity-90">Sign Up</button>
+    </div>
+    <div class="flex flex-col p-5 lg:p-14 bg-[var(--Light-Cyan)] rounded-bl-md rounded-br-md lg:rounded-bl-none">
+      <h1 class="text-white text-base lg:text-lg font-bold mb-2">Why Us</h1>
+    
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">Tutorials by industry experts</p>
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">Peer &amp; expert code review</p>
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">Coding exercises</p>
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">Access to our GitHub repos</p>
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">Community forum</p>
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">Flashcard decks</p>
+      <p class="text-sm lg:text-base text-[var(--Light-Gray)] font-normal">New videos every week</p>
+    </div>
+  </main>
 </body>
 </html>
